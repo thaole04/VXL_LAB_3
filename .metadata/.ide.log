@@ -707,3 +707,230 @@
 2023-10-17 15:52:21,976 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2230mS.
 2023-10-17 15:52:21,977 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
 2023-10-17 15:52:21,980 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-17 22:24:26,613 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 357220168 Bytes (790626304)
+2023-10-17 22:24:27,739 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 382815640 Bytes (790626304)
+2023-10-17 22:24:30,688 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 475090328 Bytes (790626304)
+2023-10-17 22:24:31,000 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-10-17 22:24:31,001 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-10-17 22:24:31,001 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-10-17 22:24:31,001 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-10-17 22:24:31,001 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2023-10-17 22:24:31,002 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2023-10-17 22:24:31,235 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp_save
+2023-10-17 22:24:31,326 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp
+2023-10-17 22:24:31,350 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp_save
+2023-10-17 22:24:31,415 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp
+2023-10-17 22:24:31,464 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c_save
+2023-10-17 22:24:31,559 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c
+2023-10-17 22:24:31,570 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h_save
+2023-10-17 22:24:31,640 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h
+2023-10-17 22:24:31,661 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c_save
+2023-10-17 22:24:31,764 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c
+2023-10-17 22:24:31,773 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp_save
+2023-10-17 22:24:31,820 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp
+2023-10-17 22:24:31,841 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-10-17 22:24:31,934 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h
+2023-10-17 22:24:31,952 [WARN] IPConfigManager:3148 - IP not found : TIM
+2023-10-17 22:24:31,954 [WARN] CodeGenerator:3268 - IP not found : null
+2023-10-17 22:24:31,981 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h_save
+2023-10-17 22:24:32,059 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h
+2023-10-17 22:24:32,077 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c_save
+2023-10-17 22:24:32,187 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c
+2023-10-17 22:24:32,842 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 54mS.
+2023-10-17 22:24:32,846 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2023-10-17 22:24:33,298 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2023-10-17 22:24:34,731 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 1885mS.
+2023-10-17 22:24:34,732 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-17 22:24:34,735 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-17 22:32:59,339 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:33:10,187 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 312285480 Bytes (811597824)
+2023-10-17 22:33:11,369 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 314056792 Bytes (811597824)
+2023-10-17 22:33:11,874 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 357220808 Bytes (811597824)
+2023-10-17 22:33:12,103 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-10-17 22:33:12,103 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-10-17 22:33:12,104 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-10-17 22:33:12,104 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-10-17 22:33:12,104 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2023-10-17 22:33:12,105 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2023-10-17 22:33:12,317 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp_save
+2023-10-17 22:33:12,366 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp
+2023-10-17 22:33:12,380 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp_save
+2023-10-17 22:33:12,432 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp
+2023-10-17 22:33:12,467 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c_save
+2023-10-17 22:33:12,537 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c
+2023-10-17 22:33:12,540 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h_save
+2023-10-17 22:33:12,589 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h
+2023-10-17 22:33:12,606 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c_save
+2023-10-17 22:33:12,688 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c
+2023-10-17 22:33:12,690 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp_save
+2023-10-17 22:33:12,731 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp
+2023-10-17 22:33:12,745 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-10-17 22:33:12,823 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h
+2023-10-17 22:33:12,837 [WARN] IPConfigManager:3148 - IP not found : TIM
+2023-10-17 22:33:12,838 [WARN] CodeGenerator:3268 - IP not found : null
+2023-10-17 22:33:12,853 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h_save
+2023-10-17 22:33:12,924 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h
+2023-10-17 22:33:12,938 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c_save
+2023-10-17 22:33:13,101 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c
+2023-10-17 22:33:13,673 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 51mS.
+2023-10-17 22:33:13,676 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2023-10-17 22:33:14,088 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2023-10-17 22:33:15,390 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 1714mS.
+2023-10-17 22:33:15,391 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2023-10-17 22:33:15,394 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-17 22:43:03,537 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:43:04,974 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:43:07,010 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:43:08,703 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:43:12,749 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:34,755 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:36,149 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:37,479 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:40,923 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:44,230 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:51,150 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:52,908 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:54,709 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:56,701 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:45:58,292 [INFO] Gpio:254 - dependency for GPIO [SYS]
+2023-10-17 22:46:30,675 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:47:44,921 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:47:46,571 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:47:48,539 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:47:51,503 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:47:53,139 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:47:55,177 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:48:05,992 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:48:56,752 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 318882368 Bytes (839909376)
+2023-10-17 22:48:56,802 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 329898600 Bytes (839909376)
+2023-10-17 22:48:57,280 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 415877696 Bytes (839909376)
+2023-10-17 22:48:57,470 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-10-17 22:48:57,470 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-10-17 22:48:57,470 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-10-17 22:48:57,471 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-10-17 22:48:57,471 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2023-10-17 22:48:57,471 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2023-10-17 22:48:57,658 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp_save
+2023-10-17 22:48:57,706 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp
+2023-10-17 22:48:57,744 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp_save
+2023-10-17 22:48:57,802 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp
+2023-10-17 22:48:57,892 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c_save
+2023-10-17 22:48:57,994 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c
+2023-10-17 22:48:58,034 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h_save
+2023-10-17 22:48:58,106 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h
+2023-10-17 22:48:58,123 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c_save
+2023-10-17 22:48:58,216 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c
+2023-10-17 22:48:58,220 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp_save
+2023-10-17 22:48:58,265 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp
+2023-10-17 22:48:58,281 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-10-17 22:48:58,359 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h
+2023-10-17 22:48:58,373 [WARN] IPConfigManager:3148 - IP not found : TIM
+2023-10-17 22:48:58,373 [WARN] CodeGenerator:3268 - IP not found : null
+2023-10-17 22:48:58,388 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h_save
+2023-10-17 22:48:58,463 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h
+2023-10-17 22:48:58,473 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c_save
+2023-10-17 22:48:58,576 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c
+2023-10-17 22:48:59,290 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 80mS.
+2023-10-17 22:48:59,293 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2023-10-17 22:48:59,665 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2023-10-17 22:49:01,047 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 1754mS.
+2023-10-17 22:49:01,048 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2023-10-17 22:49:01,051 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2023-10-17 22:54:26,093 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:54:30,491 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:54:31,686 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:54:32,906 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:54:34,362 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:54:48,799 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:54:50,077 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:55:53,987 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 22:56:04,728 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 546595552 Bytes (893386752)
+2023-10-17 22:56:04,778 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 557838744 Bytes (893386752)
+2023-10-17 22:56:06,236 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 656695384 Bytes (893386752)
+2023-10-17 22:56:06,457 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-10-17 22:56:06,457 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-10-17 22:56:06,458 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-10-17 22:56:06,458 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-10-17 22:56:06,458 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2023-10-17 22:56:06,459 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2023-10-17 22:56:06,682 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp_save
+2023-10-17 22:56:06,723 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp
+2023-10-17 22:56:06,753 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp_save
+2023-10-17 22:56:06,807 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp
+2023-10-17 22:56:06,879 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c_save
+2023-10-17 22:56:06,946 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c
+2023-10-17 22:56:06,950 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h_save
+2023-10-17 22:56:07,015 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h
+2023-10-17 22:56:07,033 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c_save
+2023-10-17 22:56:07,115 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c
+2023-10-17 22:56:07,118 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp_save
+2023-10-17 22:56:07,165 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp
+2023-10-17 22:56:07,181 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-10-17 22:56:07,259 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h
+2023-10-17 22:56:07,273 [WARN] IPConfigManager:3148 - IP not found : TIM
+2023-10-17 22:56:07,275 [WARN] CodeGenerator:3268 - IP not found : null
+2023-10-17 22:56:07,289 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h_save
+2023-10-17 22:56:07,358 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h
+2023-10-17 22:56:07,368 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c_save
+2023-10-17 22:56:07,469 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c
+2023-10-17 22:56:08,108 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 53mS.
+2023-10-17 22:56:08,111 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2023-10-17 22:56:08,444 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2023-10-17 22:56:09,840 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 1729mS.
+2023-10-17 22:56:09,841 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2023-10-17 22:56:09,843 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-17 23:08:15,947 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:17,234 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:18,785 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:20,512 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:21,998 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:24,421 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:26,658 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:28,375 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:31,819 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:32,870 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:34,911 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:08:36,595 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:09:30,085 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:09:31,637 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:10:20,710 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:10:21,862 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:10:33,901 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:10:35,241 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:10:50,358 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:10:51,794 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-17 23:11:12,053 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 559759216 Bytes (893386752)
+2023-10-17 23:11:12,104 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 570771312 Bytes (893386752)
+2023-10-17 23:11:12,618 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 653082480 Bytes (893386752)
+2023-10-17 23:11:12,873 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-10-17 23:11:12,873 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-10-17 23:11:12,874 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-10-17 23:11:12,874 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-10-17 23:11:12,874 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2023-10-17 23:11:12,876 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2023-10-17 23:11:13,135 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp_save
+2023-10-17 23:11:13,187 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\license.tmp
+2023-10-17 23:11:13,232 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp_save
+2023-10-17 23:11:13,295 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\gpio.tmp
+2023-10-17 23:11:13,383 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c_save
+2023-10-17 23:11:13,445 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_it.c
+2023-10-17 23:11:13,450 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h_save
+2023-10-17 23:11:13,500 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_it.h
+2023-10-17 23:11:13,516 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c_save
+2023-10-17 23:11:13,595 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\stm32f1xx_hal_msp.c
+2023-10-17 23:11:13,600 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp_save
+2023-10-17 23:11:13,661 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\MXTmpFiles\system.tmp
+2023-10-17 23:11:13,683 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-10-17 23:11:13,788 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\stm32f1xx_hal_conf.h
+2023-10-17 23:11:13,818 [WARN] IPConfigManager:3148 - IP not found : TIM
+2023-10-17 23:11:13,819 [WARN] CodeGenerator:3268 - IP not found : null
+2023-10-17 23:11:13,844 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h_save
+2023-10-17 23:11:13,943 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Inc\main.h
+2023-10-17 23:11:13,955 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c_save
+2023-10-17 23:11:14,134 [INFO] CodeEngine:257 - Generated code: C:\Users\thao2\Desktop\Study\hcmut\HK231\VXL\thuc_hanh\Lab\VXL_LAB_3\BUTTON\Core\Src\main.c
+2023-10-17 23:11:14,663 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 56mS.
+2023-10-17 23:11:14,666 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2023-10-17 23:11:14,939 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2023-10-17 23:11:16,516 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 1850mS.
+2023-10-17 23:11:16,516 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-17 23:11:16,518 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
