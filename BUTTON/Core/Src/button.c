@@ -7,6 +7,7 @@
 
 
 #include "button.h"
+#include "processing.h"
 
 int keyReg0[NUM_OF_BUTTONS] = {INITIAL_BUTTON_STATE, INITIAL_BUTTON_STATE, INITIAL_BUTTON_STATE};
 int keyReg1[NUM_OF_BUTTONS] = {INITIAL_BUTTON_STATE, INITIAL_BUTTON_STATE, INITIAL_BUTTON_STATE};
@@ -15,17 +16,88 @@ int keyReg2[NUM_OF_BUTTONS] = {INITIAL_BUTTON_STATE, INITIAL_BUTTON_STATE, INITI
 int keyRegPast[NUM_OF_BUTTONS] = {INITIAL_BUTTON_STATE, INITIAL_BUTTON_STATE, INITIAL_BUTTON_STATE};
 
 int timerForKeyPress[NUM_OF_BUTTONS] = {TIME_PRESS, TIME_PRESS, TIME_PRESS};
+int mode = 1;
 
 void keyProcessing(int num){
 	switch(num){
 	case 0:
-		HAL_GPIO_TogglePin(LED_RED_X_GPIO_Port, LED_RED_X_Pin);
+		switch(mode){
+		case 1:
+			mode = 2;
+			timeRedBuffer = timeRed;
+			timeAmberBuffer = timeAmber;
+			timeGreenBuffer = timeGreen;
+			disableAllLeds();
+			break;
+		case 2:
+			mode = 3;
+			timeRedBuffer = timeRed;
+			timeAmberBuffer = timeAmber;
+			timeGreenBuffer = timeGreen;
+			disableAllLeds();
+			break;
+		case 3:
+			mode = 4;
+			timeRedBuffer = timeRed;
+			timeAmberBuffer = timeAmber;
+			timeGreenBuffer = timeGreen;
+			disableAllLeds();
+			break;
+		case 4:
+			mode = 1;
+			timeRedBuffer = timeRed;
+			timeAmberBuffer = timeAmber;
+			timeGreenBuffer = timeGreen;
+			disableAllLeds();
+			INIT_MODE();
+			break;
+		default:
+			mode = 1;
+			break;
+		}
 		break;
 	case 1:
-		HAL_GPIO_TogglePin(LED_AMBER_X_GPIO_Port, LED_AMBER_X_Pin);
+		switch(mode){
+		case 1:
+			break;
+		case 2:
+			timeRedBuffer++;
+			if (timeRedBuffer > 99){
+				timeRedBuffer = 1;
+			}
+			break;
+		case 3:
+			timeAmberBuffer++;
+			if (timeAmberBuffer > 99){
+				timeAmberBuffer = 1;
+			}
+			break;
+		case 4:
+			timeGreenBuffer++;
+			if (timeGreenBuffer > 99){
+				timeGreenBuffer = 1;
+			}
+			break;
+		default:
+			break;
+		}
 		break;
 	case 2:
-		HAL_GPIO_TogglePin(LED_GREEN_X_GPIO_Port, LED_GREEN_X_Pin);
+		switch(mode){
+		case 1:
+			break;
+		case 2:
+			timeRed = timeRedBuffer;
+			break;
+		case 3:
+			timeAmber = timeAmberBuffer;
+			break;
+		case 4:
+			timeGreen = timeGreenBuffer;
+			break;
+		default:
+			break;
+		}
 		break;
 	default:
 		break;
@@ -33,19 +105,7 @@ void keyProcessing(int num){
 }
 
 void keyHoldProcessing(int num){
-	switch(num){
-	case 0:
-		HAL_GPIO_TogglePin(LED_RED_X_GPIO_Port, LED_RED_X_Pin);
-		break;
-	case 1:
-		HAL_GPIO_TogglePin(LED_AMBER_X_GPIO_Port, LED_AMBER_X_Pin);
-		break;
-	case 2:
-		HAL_GPIO_TogglePin(LED_GREEN_X_GPIO_Port, LED_GREEN_X_Pin);
-		break;
-	default:
-		break;
-	}
+	keyProcessing(num);
 }
 
 void getKeyInput(){

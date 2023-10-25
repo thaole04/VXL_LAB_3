@@ -10,9 +10,17 @@
 
 // variable
 extern int timer0_flag;
+extern int timer_blink_flag;
+extern int timer_normal_modeX;
+extern int timer_normal_mode_flagX;
+extern int timer_normal_modeY;
+extern int timer_normal_mode_flagY;
 
 // function
 void setTimer0(int duration);
+void setTimerBlink(int duration);
+void setTimerNormalModeX(int duration);
+void setTimerNormalModeY(int duration);
 void timerRun();
 
 

@@ -1,0 +1,7 @@
+processing.c:14:6:disableAllLeds	8	static
+processing.c:36:6:INIT_MODE	8	static
+processing.c:41:6:normalMode	8	static
+processing.c:117:6:changeTimeRedMode	8	static
+processing.c:126:6:changeTimeAmberMode	8	static
+processing.c:135:6:changeTimeGreenMode	8	static
+processing.c:144:6:fsm	8	static

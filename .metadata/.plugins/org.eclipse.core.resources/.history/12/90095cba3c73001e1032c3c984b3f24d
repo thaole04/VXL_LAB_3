@@ -1,0 +1,128 @@
+/*
+ * processing.c
+ *
+ *  Created on: Oct 18, 2023
+ *      Author: thao2
+ */
+
+
+#include "processing.h"
+#include "button.h"
+#include "control_leds_segment.h"
+#include "software_timer.h"
+
+
+int timeRed = 5;
+int timeAmber = 2;
+int timeGreen = 3;
+enum {
+	LEDREDX_LEDGREENY,
+	LEDREDX_LEDAMBERY,
+	LEDREDY_LEDGREENX,
+	LEDREDY_LEDAMBERX
+} statusNormalMode = LEDREDX_LEDGREENY;
+void INIT_MODE(){
+	switch (statusNormalMode) {
+		case LEDREDX_LEDGREENY:
+			setTimerNormalModeX(timeRed);
+			setTimerNormalModeY(timeGreen);
+			break;
+		case LEDREDX_LEDAMBERY:
+			setTimerNormalModeX(timeRed);
+			setTimerNormalModeY(timeAmber);
+			break;
+		case LEDREDY_LEDGREENX:
+			setTimerNormalModeX(timeGreen);
+			setTimerNormalModeY(timeRed);
+			break;
+		case LEDREDY_LEDAMBERX:
+			setTimerNormalModeX(timeAmber);
+			setTimerNormalModeY(timeRed);
+			break;
+		default:
+			break;
+	}
+}
+void normalMode(){
+	switch (statusNormalMode) {
+		case LEDREDX_LEDGREENY:
+			if (timer_normal_mode_flagX==1){
+				statusNormalMode = LEDREDY_LEDGREENX;
+				setTimerNormalModeX(timeAmber);
+				setTimerNormalModeY(timeRed);
+			}
+			if (timer_normal_mode_flagY == 1){
+				statusNormalMode = LEDREDX_LEDAMBERY;
+				setTimerNormalModeY(timeAmber);
+			}
+			break;
+		case LEDREDX_LEDAMBERY:
+			if (timer_normal_mode_flagX == 1){
+				statusNormalMode = LEDREDY_LEDGREENX;
+				setTimerNormalModeX(timeGreen);
+				setTimerNormalModeY(timeRed);
+			}
+			if (timer_normal_mode_flagY == 1){
+				statusNormalMode = LEDREDY_LEDGREENX;
+				setTimerNormalModeX(timeGreen);
+				setTimerNormalModeY(timeRed);
+			}
+			break;
+		case LEDREDY_LEDGREENX:
+			if (timer_normal_mode_flagY == 1){
+				statusNormalMode = LEDREDX_LEDGREENY;
+				setTimerNormalModeX(timeRed);
+				setTimerNormalModeY(timeGreen);
+			}
+			if (timer_normal_mode_flagX == 1){
+				statusNormalMode = LEDREDY_LEDAMBERX;
+				setTimerNormalModeX(timeAmber);
+			}
+			break;
+		case LEDREDY_LEDAMBERX:
+			if (timer_normal_mode_flagY == 1){
+				statusNormalMode = LEDREDX_LEDGREENY;
+				setTimerNormalModeX(timeRed);
+				setTimerNormalModeY(timeGreen);
+			}
+			if (timer_normal_mode_flagX == 1){
+				statusNormalMode = LEDREDX_LEDGREENY;
+				setTimerNormalModeX(timeRed);
+				setTimerNormalModeY(timeGreen);
+			}
+			break;
+		default:
+			break;
+	}
+}
+void changeTimeRedMode(){
+	displayNumSEGX(2);
+	displayNumSEGY(2);
+}
+void changeTimeAmberMode(){
+	displayNumSEGX(3);
+	displayNumSEGY(3);
+}
+void changeTimeGreenMode(){
+	displayNumSEGX(4);
+	displayNumSEGY(4);
+}
+void fsm(){
+	switch(mode){
+	case 1:
+		normalMode();
+		break;
+	case 2:
+		changeTimeRedMode();
+		break;
+	case 3:
+		changeTimeAmberMode();
+		break;
+	case 4:
+		changeTimeGreenMode();
+		break;
+	default:
+		mode = 1;
+		break;
+	}
+}

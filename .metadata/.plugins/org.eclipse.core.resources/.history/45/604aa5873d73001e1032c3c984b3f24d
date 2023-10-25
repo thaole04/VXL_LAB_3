@@ -1,0 +1,20 @@
+/*
+ * processing.h
+ *
+ *  Created on: Oct 18, 2023
+ *      Author: thao2
+ */
+
+#ifndef INC_PROCESSING_H_
+#define INC_PROCESSING_H_
+
+#include "main.h"
+void INIT_MODE();
+void fsm();
+void normalMode();
+void changeTimeRedMode();
+void changeTimeAmberMode();
+void changeTimeGreenMode();
+
+
+#endif /* INC_PROCESSING_H_ */

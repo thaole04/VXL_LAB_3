@@ -23,8 +23,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
-#include "button.h"
+#include "processing.h"
 #include "control_leds_segment.h"
+#include "button.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,15 +97,24 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  INIT_MODE();
+  disableAllLeds();
   setTimer0(100);
-  int counter = 0;
+  setTimerBlink(50);
   while (1)
   {
 	  if (timer0_flag == 1){
+		  if (mode == 1){
+			timer_normal_modeX--;
+			if (timer_normal_modeX <= 0){
+				timer_normal_mode_flagX = 1;
+			}
+			timer_normal_modeY--;
+			if (timer_normal_modeY <= 0){
+				timer_normal_mode_flagY = 1;
+			}
+		  }
 		  setTimer0(100);
-		  counter++;
-		  displayNumSEGX(counter);
-		  displayNumSEGY(counter);
 	  }
     /* USER CODE END WHILE */
 
@@ -252,6 +262,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	// Timer TODO
 	timerRun();
 	getKeyInput();
+	fsm();
+	if (mode == 1){
+		displayNumSEGX(timer_normal_modeX);
+		displayNumSEGY(timer_normal_modeY);
+	}
 }
 /* USER CODE END 4 */
 

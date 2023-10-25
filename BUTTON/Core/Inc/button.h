@@ -17,8 +17,8 @@
 #define TIME_PRESS 100
 
 void getKeyInput();
-void keyProcessing(int i);
-void keyHoldProcessing(int i);
-
+void keyProcessing(int num);
+void keyHoldProcessing(int num);
+extern int mode;
 
 #endif /* INC_BUTTON_H_ */
