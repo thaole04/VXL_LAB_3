@@ -37,6 +37,9 @@ void INIT_MODE(){
 	statusNormalMode = LEDREDX_LEDGREENY;
 	setTimerNormalModeX(timeRed);
 	setTimerNormalModeY(timeGreen);
+	disableAllLeds();
+	setTimer0(100);
+	setTimerBlink(50);
 }
 void normalMode(){
 	switch (statusNormalMode) {

@@ -40,13 +40,15 @@ void setTimerNormalModeY(int duration){
 	timer_normal_mode_flagY = 0;
 }
 
-void timerRun() {
+void timerRunTIM2() {
 	if (timer0_counter > 0){
 		timer0_counter--;
 		if (timer0_counter <= 0) {
 			timer0_flag = 1;
 		}
 	}
+}
+void timerRunTIM3() {
 	if (timer_blink > 0){
 		timer_blink--;
 		if (timer_blink <= 0) {

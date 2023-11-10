@@ -9,9 +9,7 @@
 #define INC_SOFTWARE_TIMER_H_
 
 // variable
-extern int timer0_counter;
 extern int timer0_flag;
-extern int timer_blink;
 extern int timer_blink_flag;
 extern int timer_normal_modeX;
 extern int timer_normal_mode_flagX;

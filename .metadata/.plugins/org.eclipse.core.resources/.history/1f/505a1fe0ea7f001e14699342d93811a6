@@ -96,12 +96,14 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
-  HAL_TIM_Base_Start_IT(&htim3);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   INIT_MODE();
+  disableAllLeds();
+  setTimer0(100);
+  setTimerBlink(50);
   while (1)
   {
 	  if (timer0_flag == 1){
@@ -306,19 +308,12 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	// Timer TODO
-	if (htim->Instance == TIM2){
-		timerRunTIM2();
-		// timerRunTIM2 control timer0_counter for all system
-		getKeyInput();
-		fsm();
-		if (mode == 1){
-			displayNumSEGX(timer_normal_modeX);
-			displayNumSEGY(timer_normal_modeY);
-		}
-	}
-	if (htim->Instance == TIM3) {
-		timerRunTIM3();
-		// timerRunTIM3() control only timer_blink which is timer counter of LED blinking station in change time modes.
+	timerRun();
+	getKeyInput();
+	fsm();
+	if (mode == 1){
+		displayNumSEGX(timer_normal_modeX);
+		displayNumSEGY(timer_normal_modeY);
 	}
 }
 /* USER CODE END 4 */

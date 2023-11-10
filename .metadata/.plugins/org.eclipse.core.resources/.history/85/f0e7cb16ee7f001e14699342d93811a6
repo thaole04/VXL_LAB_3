@@ -308,7 +308,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	// Timer TODO
 	if (htim->Instance == TIM2){
 		timerRunTIM2();
-		// timerRunTIM2 control timer0_counter for all system
 		getKeyInput();
 		fsm();
 		if (mode == 1){
@@ -318,7 +317,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	}
 	if (htim->Instance == TIM3) {
 		timerRunTIM3();
-		// timerRunTIM3() control only timer_blink which is timer counter of LED blinking station in change time modes.
 	}
 }
 /* USER CODE END 4 */
