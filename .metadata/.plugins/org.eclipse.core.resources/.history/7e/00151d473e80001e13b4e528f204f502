@@ -21,23 +21,19 @@ void disableAllLeds(){
 	HAL_GPIO_WritePin(LED_GREEN_Y_GPIO_Port, LED_GREEN_Y_Pin, SET);
 }
 
-// initial time for all led and buffer to control time
+
 int timeRed = 5;
 int timeAmber = 2;
 int timeGreen = 3;
 int timeRedBuffer = 5;
 int timeAmberBuffer = 2;
 int timeGreenBuffer = 3;
-
-// 4 sub mode in Normal Mode
 enum {
 	LEDREDX_LEDGREENY,
 	LEDREDX_LEDAMBERY,
 	LEDREDY_LEDGREENX,
 	LEDREDY_LEDAMBERX
 } statusNormalMode = LEDREDX_LEDGREENY;
-
-// INIT to assign initial value for all system
 void INIT_MODE(){
 	statusNormalMode = LEDREDX_LEDGREENY;
 	setTimerNormalModeX(timeRed);
@@ -46,8 +42,6 @@ void INIT_MODE(){
 	setTimer0(100);
 	setTimerBlink(50);
 }
-
-// Normal Mode (mode 1)
 void normalMode(){
 	switch (statusNormalMode) {
 		case LEDREDX_LEDGREENY:
@@ -124,7 +118,6 @@ void normalMode(){
 			break;
 	}
 }
-// change time red mode (mode 2)
 void changeTimeRedMode(){
 	if (timer_blink_flag == 1) {
 		HAL_GPIO_TogglePin(LED_RED_X_GPIO_Port, LED_RED_X_Pin);
@@ -134,7 +127,6 @@ void changeTimeRedMode(){
 	displayNumSEGX(2);
 	displayNumSEGY(timeRedBuffer);
 }
-// change time amber mode (mode 3)
 void changeTimeAmberMode(){
 	if (timer_blink_flag == 1) {
 		HAL_GPIO_TogglePin(LED_AMBER_X_GPIO_Port, LED_AMBER_X_Pin);
@@ -144,7 +136,6 @@ void changeTimeAmberMode(){
 	displayNumSEGX(3);
 	displayNumSEGY(timeAmberBuffer);
 }
-// change time green mode (mode 4)
 void changeTimeGreenMode(){
 	if (timer_blink_flag == 1) {
 		HAL_GPIO_TogglePin(LED_GREEN_X_GPIO_Port, LED_GREEN_X_Pin);
@@ -154,8 +145,6 @@ void changeTimeGreenMode(){
 	displayNumSEGX(4);
 	displayNumSEGY(timeGreenBuffer);
 }
-
-// fsm
 void fsm(){
 	switch(mode){
 	case 1:

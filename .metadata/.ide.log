@@ -2442,3 +2442,7 @@
 2023-11-11 00:15:39,257 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
 2023-11-11 00:15:39,260 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
 2023-11-11 00:15:50,927 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-11 08:43:58,198 [INFO] Activator:177 - 
+
+
+2023-11-11 08:43:58,199 [INFO] Activator:178 - !SESSION log4j initialized

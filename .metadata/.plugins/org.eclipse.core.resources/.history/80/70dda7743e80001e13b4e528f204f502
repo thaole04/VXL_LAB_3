@@ -104,7 +104,7 @@ int main(void)
   INIT_MODE();
   while (1)
   {
-	  if (timer0_flag == 1){ // after 1s
+	  if (timer0_flag == 1){
 		  if (mode == 1){
 			timer_normal_modeX--;
 			if (timer_normal_modeX <= 0){

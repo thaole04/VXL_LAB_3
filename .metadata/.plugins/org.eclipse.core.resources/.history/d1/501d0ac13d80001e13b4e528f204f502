@@ -18,7 +18,6 @@ int keyRegPast[NUM_OF_BUTTONS] = {INITIAL_BUTTON_STATE, INITIAL_BUTTON_STATE, IN
 int timerForKeyPress[NUM_OF_BUTTONS] = {TIME_PRESS, TIME_PRESS, TIME_PRESS};
 int mode = 1;
 
-// key processing for key press
 void keyProcessing(int num){
 	switch(num){
 	case 0:
@@ -105,12 +104,10 @@ void keyProcessing(int num){
 	}
 }
 
-// long key press == key press
 void keyHoldProcessing(int num){
 	keyProcessing(num);
 }
 
-// get key press action for 3 button
 void getKeyInput(){
 	for (int i = 0; i < NUM_OF_BUTTONS; i++){
 		keyReg0[i] = keyReg1[i];

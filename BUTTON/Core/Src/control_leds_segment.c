@@ -7,7 +7,7 @@
 
 
 #include "control_leds_segment.h"
-
+// control display in led segment 0th
 void setValueSEG0(int num){
 	switch(num){
 	case 0:
@@ -79,7 +79,7 @@ void setValueSEG0(int num){
 	}
 }
 
-
+// control display in led segment 1th
 void setValueSEG1(int num){
 	switch(num){
 	case 0:
@@ -151,7 +151,7 @@ void setValueSEG1(int num){
 	}
 }
 
-
+// control display in led segment 2th
 void setValueSEG2(int num){
 	switch(num){
 	case 0:
@@ -223,7 +223,7 @@ void setValueSEG2(int num){
 	}
 }
 
-
+// control display in led segment 3th
 void setValueSEG3(int num){
 	switch(num){
 	case 0:
@@ -295,11 +295,16 @@ void setValueSEG3(int num){
 	}
 }
 
+// control display in 2 led segment in line X
 void displayNumSEGX(int num){
+	// num in range of 0 --> 99
+	// Dozens is num/10 and unit is num%10
 	setValueSEG0(num/10);
 	setValueSEG1(num%10);
 }
 void displayNumSEGY(int num){
+	// num in range of 0 --> 99
+	// Dozens is num/10 and unit is num%10
 	setValueSEG2(num/10);
 	setValueSEG3(num%10);
 }

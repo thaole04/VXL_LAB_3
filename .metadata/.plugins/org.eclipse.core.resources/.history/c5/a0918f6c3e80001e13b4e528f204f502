@@ -9,19 +9,17 @@
 #include "software_timer.h"
 #include "control_leds_segment.h"
 
-// timer for main system
 int timer0_counter = 0;
 int timer0_flag = 0;
 
-// timer for blinking led in mode 2, 3, 4 (change time mode)
+
 int timer_blink_flag = 0;
 int timer_blink = 0;
 
-// timer for leds in line X
 int timer_normal_modeX = 0;
 int timer_normal_mode_flagX = 0;
 
-// timer for leds in line Y
+
 int timer_normal_modeY = 0;
 int timer_normal_mode_flagY = 0;
 
@@ -41,6 +39,7 @@ void setTimerNormalModeY(int duration){
 	timer_normal_modeY = duration;
 	timer_normal_mode_flagY = 0;
 }
+
 void timerRunTIM2() {
 	if (timer0_counter > 0){
 		timer0_counter--;
