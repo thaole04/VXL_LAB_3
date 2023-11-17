@@ -1,10 +1,13 @@
-09:41:54 **** Incremental Build of configuration Debug for project BUTTON ****
+19:36:23 **** Incremental Build of configuration Debug for project BUTTON ****
 make -j8 all 
 arm-none-eabi-size   BUTTON.elf 
+arm-none-eabi-objcopy  -O ihex  BUTTON.elf  "BUTTON.hex"
    text	   data	    bss	    dec	    hex	filename
-  11896	    108	   1748	  13752	   35b8	BUTTON.elf
+  11872	    112	   1688	  13672	   3568	BUTTON.elf
 Finished building: default.size.stdout
  
+Finished building: BUTTON.hex
+ 
 
-09:41:54 Build Finished. 0 errors, 0 warnings. (took 378ms)
+19:36:23 Build Finished. 0 errors, 0 warnings. (took 256ms)
 

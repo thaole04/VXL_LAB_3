@@ -21,8 +21,10 @@ int mode = 1;
 // key processing for key press
 void keyProcessing(int num){
 	switch(num){
+	// button[0]
 	case 0:
 		switch(mode){
+		// for mode 1
 		case 1:
 			mode = 2;
 			timeRedBuffer = timeRed;
@@ -30,6 +32,7 @@ void keyProcessing(int num){
 			timeGreenBuffer = timeGreen;
 			disableAllLeds();
 			break;
+		// for mode 2
 		case 2:
 			mode = 3;
 			timeRedBuffer = timeRed;
@@ -37,6 +40,7 @@ void keyProcessing(int num){
 			timeGreenBuffer = timeGreen;
 			disableAllLeds();
 			break;
+		// for mode 3
 		case 3:
 			mode = 4;
 			timeRedBuffer = timeRed;
@@ -44,6 +48,7 @@ void keyProcessing(int num){
 			timeGreenBuffer = timeGreen;
 			disableAllLeds();
 			break;
+		// for mode 4
 		case 4:
 			mode = 1;
 			timeRedBuffer = timeRed;
@@ -57,22 +62,27 @@ void keyProcessing(int num){
 			break;
 		}
 		break;
+	// button[1]
 	case 1:
 		switch(mode){
+		// for mode 1
 		case 1:
 			break;
+		// for mode 2
 		case 2:
 			timeRedBuffer++;
 			if (timeRedBuffer > 99){
 				timeRedBuffer = 1;
 			}
 			break;
+		// for mode 3
 		case 3:
 			timeAmberBuffer++;
 			if (timeAmberBuffer > 99){
 				timeAmberBuffer = 1;
 			}
 			break;
+		// for mode 4
 		case 4:
 			timeGreenBuffer++;
 			if (timeGreenBuffer > 99){
@@ -83,16 +93,21 @@ void keyProcessing(int num){
 			break;
 		}
 		break;
+	// button[2]
 	case 2:
 		switch(mode){
+		// for mode 1
 		case 1:
 			break;
+		// for mode 2
 		case 2:
 			timeRed = timeRedBuffer;
 			break;
+		// for mode 3
 		case 3:
 			timeAmber = timeAmberBuffer;
 			break;
+		// for mode 4
 		case 4:
 			timeGreen = timeGreenBuffer;
 			break;

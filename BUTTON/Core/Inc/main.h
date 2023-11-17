@@ -32,7 +32,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+extern int pre_timer;
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -76,6 +76,8 @@ void Error_Handler(void);
 #define LED_AMBER_Y_GPIO_Port GPIOA
 #define LED_GREEN_Y_Pin GPIO_PIN_6
 #define LED_GREEN_Y_GPIO_Port GPIOA
+#define LED_STATUS_Pin GPIO_PIN_7
+#define LED_STATUS_GPIO_Port GPIOA
 #define SEG0_A_Pin GPIO_PIN_0
 #define SEG0_A_GPIO_Port GPIOB
 #define SEG0_B_Pin GPIO_PIN_1

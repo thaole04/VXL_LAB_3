@@ -1,6 +1,6 @@
 # VXL_LAB_3
 
-## Video demo for this lab in link: https://youtu.be/fKMq8bPqJPg
+## Video demo for this lab in link: https://youtu.be/zZLNIMsgmGA
 
 ## Source code for this lab in link: https://github.com/thaole04/VXL\_LAB\_3
 

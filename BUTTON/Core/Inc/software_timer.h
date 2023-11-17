@@ -9,22 +9,24 @@
 #define INC_SOFTWARE_TIMER_H_
 
 // variable
-extern int timer0_counter;
-extern int timer0_flag;
+extern int timer_counter;
+extern int timer_flag;
 extern int timer_blink;
 extern int timer_blink_flag;
 extern int timer_normal_modeX;
 extern int timer_normal_mode_flagX;
 extern int timer_normal_modeY;
 extern int timer_normal_mode_flagY;
+extern int timer_status;
+extern int timer_status_flag;
 
 // function
-void setTimer0(int duration);
+void setTimer(int duration);
 void setTimerBlink(int duration);
+void setTimerStatus(int duration);
 void setTimerNormalModeX(int duration);
 void setTimerNormalModeY(int duration);
 void timerRunTIM2();
-void timerRunTIM3();
 
 
 #endif /* INC_SOFTWARE_TIMER_H_ */

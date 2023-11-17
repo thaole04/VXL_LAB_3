@@ -1,0 +1,6 @@
+control_leds_segment.c:11:6:setValueSEG0	8	static
+control_leds_segment.c:83:6:setValueSEG1	8	static
+control_leds_segment.c:155:6:setValueSEG2	8	static
+control_leds_segment.c:227:6:setValueSEG3	8	static
+control_leds_segment.c:299:6:displayNumSEGX	16	static
+control_leds_segment.c:305:6:displayNumSEGY	16	static

@@ -43,12 +43,28 @@ void INIT_MODE(){
 	setTimerNormalModeX(timeRed);
 	setTimerNormalModeY(timeGreen);
 	disableAllLeds();
-	setTimer0(100);
-	setTimerBlink(50);
+	setTimer(1000);
+	setTimerBlink(500);
+	setTimerStatus(500);
 }
 
 // Normal Mode (mode 1)
 void normalMode(){
+	if (timer_flag == 1){ // after 1s
+		// TODO
+		if (mode == 1){
+		timer_normal_modeX--;
+		if (timer_normal_modeX <= 0){
+			timer_normal_mode_flagX = 1;
+		}
+		timer_normal_modeY--;
+		if (timer_normal_modeY <= 0){
+			timer_normal_mode_flagY = 1;
+		}
+		}
+		// set timer
+		setTimer(1000);
+	}
 	switch (statusNormalMode) {
 		case LEDREDX_LEDGREENY:
 			if (timer_normal_mode_flagX==1){
@@ -129,7 +145,7 @@ void changeTimeRedMode(){
 	if (timer_blink_flag == 1) {
 		HAL_GPIO_TogglePin(LED_RED_X_GPIO_Port, LED_RED_X_Pin);
 		HAL_GPIO_TogglePin(LED_RED_Y_GPIO_Port, LED_RED_Y_Pin);
-		setTimerBlink(50);
+		setTimerBlink(500);
 	}
 	displayNumSEGX(2);
 	displayNumSEGY(timeRedBuffer);
@@ -139,7 +155,7 @@ void changeTimeAmberMode(){
 	if (timer_blink_flag == 1) {
 		HAL_GPIO_TogglePin(LED_AMBER_X_GPIO_Port, LED_AMBER_X_Pin);
 		HAL_GPIO_TogglePin(LED_AMBER_Y_GPIO_Port, LED_AMBER_Y_Pin);
-		setTimerBlink(50);
+		setTimerBlink(500);
 	}
 	displayNumSEGX(3);
 	displayNumSEGY(timeAmberBuffer);
@@ -149,7 +165,7 @@ void changeTimeGreenMode(){
 	if (timer_blink_flag == 1) {
 		HAL_GPIO_TogglePin(LED_GREEN_X_GPIO_Port, LED_GREEN_X_Pin);
 		HAL_GPIO_TogglePin(LED_GREEN_Y_GPIO_Port, LED_GREEN_Y_Pin);
-		setTimerBlink(50);
+		setTimerBlink(500);
 	}
 	displayNumSEGX(4);
 	displayNumSEGY(timeGreenBuffer);
@@ -160,6 +176,8 @@ void fsm(){
 	switch(mode){
 	case 1:
 		normalMode();
+		displayNumSEGX(timer_normal_modeX);
+		displayNumSEGY(timer_normal_modeY);
 		break;
 	case 2:
 		changeTimeRedMode();
